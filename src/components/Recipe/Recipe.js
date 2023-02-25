@@ -3,11 +3,12 @@ import { BsAlarm } from 'react-icons/bs';
 import { GiFat } from 'react-icons/gi';
 
 import { MdOutlineFastfood } from 'react-icons/md';
+import { CardWrapper } from './Recipe.styled';
 export const Recipe = ({
   recipe: { name, image, calories, time, servings },
 }) => {
   return (
-    <div>
+    <CardWrapper>
       <h2>{name}</h2>
       <img src={image} alt={name} width="240"></img>
       <div>
@@ -29,7 +30,7 @@ export const Recipe = ({
           <span>Hard</span>
         </div>
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 
